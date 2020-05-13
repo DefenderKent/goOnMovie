@@ -1,0 +1,40 @@
+.nav {
+  grid-area: n;
+  background-color: #0f4a9a;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+.nav a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.item a {
+  color: #fff;
+}
+
+.item a.activeLink {
+  color: gold;
+  display: flex;
+  align-items: center;
+}
+.nav {
+  img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+}
+.item {
+  margin-bottom: 15px;
+  a {
+    display: flex;
+    align-items: center;
+  }
+}
+.frendsContainer {
+  margin-top: 15px;
+  color: #fff;
+}

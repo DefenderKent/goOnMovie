@@ -1,0 +1,16 @@
+.content {
+  grid-area: c;
+
+  border-radius: 5px;
+}
+.content img {
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+}
+.item {
+  color: blue;
+}
+.postItem {
+  padding-left: 15px;
+}
