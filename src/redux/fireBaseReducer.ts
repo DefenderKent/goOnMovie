@@ -1,11 +1,14 @@
-import { newsAPI } from "../api/api";
+
 
 const SET_DB = "SET_DB";
+type InitialState = {
+  persons: any[]
+}
 
 let initialState = {
   persons: []
 };
-const fireBaseReducer = (state = initialState, action) => {
+const fireBaseReducer = (state = initialState, action:any):InitialState => {
   switch (action.type) {
     case SET_DB: {
       return { ...state, persons: action.persons };
@@ -14,5 +17,5 @@ const fireBaseReducer = (state = initialState, action) => {
       return state;
   }
 };
-export const setdb = persons => ({ type: SET_DB, persons });
+export const setdb = (persons:any )=> ({ type: SET_DB, persons });
 export default fireBaseReducer;
